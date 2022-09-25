@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav img {
+    width: 40px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+}
+
+a li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+
+
+
+/* dark mode */
+
+.dark-mode {
+    position: relative;
+    margin: auto 10px auto 10px;
+}
+
+.dark{
+    background-color: black;
+}
+.sun, .moon{
+    font-size: 1rem;
+    width: fit-content;
+    height: fit-content;
+}
+.moon{
+    position: absolute;
+    inset: 0;
+    color: blue;
+}
+.moon-logo{
+    opacity: 0;
+    transform: translateY(20%) rotateZ(50deg);
+    transition: all 1s ease-out;
+}
+.sun-logo{
+    opacity: 1;
+    transform: translateY(0) rotateZ(0deg);
+    transition: all 1s ease-out;
+}
+.animate-sun{
+    opacity: 0;
+    transform: translateY(20%) rotateZ(100deg);
+}
+.animate-moon{
+    opacity: 1;
+    transform: translateY(0%) rotateZ(0deg);
+}
+body {
+    transition: 1s;
+}
+
+
+
